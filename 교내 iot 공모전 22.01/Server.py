@@ -255,8 +255,8 @@ def sendText(txt,Phone):
     """
     twilio를 이용하여 문자메시지 전송
     """
-    account_sid = 'AC181dba0cc073be96e88ca517cf999818' 
-    auth_token = '275557485fe36c293b73fad6cf4a8576' 
+    account_sid = '' #twilio id
+    auth_token = '' #twilio token 
     client = Client(account_sid, auth_token)
     message = client.messages.create( 
     to="+82"+Phone, #전송할 번호
@@ -409,8 +409,8 @@ def sqldb(type, car):
 
 
 
-ip = '165.229.185.243' # ip 주소
-port = 8080 # port 번호
+ip = '' # ip 주소
+port =  # port 번호
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM) # 소켓 객체를 생성
 addr_table={}
 carName=''
